@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	 <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<title></title>
+
+</head>
+
+<style type="text/css">
+
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		text-decoration:none;
+		list-style: none;
+		font-family: sans-serif;
+	}
+	
+	body{
+		height: 100vh;
+		background:#000;
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	.circle{
+		width: 1000px;
+		height:1000px;
+
+		background-color: #ef1e25;
+		border-radius: 50%;
+
+		position: absolute;
+		top: -450px;
+		left: 800px;
+
+		z-index: -100;
+	}
+
+	.menu{
+		display: none;
+	}
+
+
+ .close{
+ 	display: none
+ }
+
+nav{
+	height: 80px;
+}
+
+	nav img{
+		width: 110px;
+		float: left;
+		margin-top: 20px;
+		margin-left: 100px
+	}
+
+	nav .nav_content{
+		float: right;
+		margin-top: 29px;
+		margin-right: 10px
+	}
+
+	nav .nav_content ul li{
+		display: inline;
+	}
+
+	nav .nav_content ul li a{
+		margin-right: 40px;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		color: #fff;
+		font-weight: bold
+	}
+
+
+.home{
+	clear: both;
+	color: white;
+	margin-top: 100px;
+	margin-left: 100px
+}
+
+.home h1{
+	padding-bottom: 20px
+}
+
+.home p{
+	width: 600px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.home button{
+	padding: 10px 15px;
+	background-color: red;
+	color: white;
+	border-radius: 9px;
+	border:none;
+	width: 200px
+}
+
+
+.social{
+position: absolute;
+left: 100px;
+top: 500px;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social li a{
+	display: inline-block;
+	margin-left: 15px;
+
+	background-color: #222;
+
+	width: 80px;
+	height: 80px;
+
+	display: flex;
+justify-content: center;
+align-items: center;
+
+
+border-radius: 100%;
+transition: 0.2s ease-in-out;
+}
+
+
+.social li a:hover{
+	transform: translateY(-10px);
+	background-color: red;
+}
+
+.social li a img{
+	filter: invert(1);
+
+}
+
+.coca{
+	height: 400px;
+	position: absolute;
+	left: 900px;
+	top: 200px
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+	body{
+		overflow: hidden;
+	}
+
+		nav img{
+		width: 160px;
+	}
+
+
+nav .nav_content{
+		transform: translate(1000px,-60px);
+}
+
+nav .nav_content ul li a{
+	font-size: 25px;
+	margin-right: 150px;
+}
+
+.circle{
+	width: 1300px;
+	height: 1300px;
+	top: -420px;
+	left: 1300px
+}
+
+.coca{
+	transform: translateX(500px);
+	height: 700px;
+}
+
+.home h1{
+	font-size: 43px
+}
+
+.home p{
+	font-size: 30px;
+	width:800px
+}
+
+.home button{
+	height: 80px;
+	width: 300px;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+.social{
+	transform: translateY(300px);
+}
+
+}
+
+
+@media screen and (max-width: 1204px){
+
+	body{
+		overflow: hidden;
+		height: 100vh;
+		margin: 0;
+	}
+
+	nav .nav_content{
+		transform: translate(2700px,-60px);
+}
+
+	nav .nav_content ul li a{
+	font-size: 55px;
+	margin-right: 80px;
+}
+
+nav .nav_content ul{
+	width: 1500px;
+}
+
+		nav img{
+		width: 290px;
+		transform: translate(0,30px);
+	}
+
+.circle{
+	width: 2300px;
+	height: 2300px;
+	left: 2300px;
+}
+
+.home h1{
+	font-size: 80px
+}
+
+.home p{
+	font-size: 60px;
+	width:1400px;
+	padding: 100px 0;
+}
+
+.home button{
+	height: 200px;
+	width: 600px;
+	font-size: 83px;
+	font-weight: bold;
+}
+
+.home{
+	transform: translateY(200px);
+}
+
+.social{
+	transform: translateY(1250px);
+}
+
+.social li a{
+	width: 200px;
+	height: 200px
+}
+
+.social li a img{
+	transform: scale(2.3);
+}
+
+.coca{
+	transform: translate(1500px,150px) rotate(5deg);
+	height: 1500px;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+	nav .nav_content{
+		transform: translate(2200px,-60px);
+}
+
+.circle{
+	width: 2400px;
+	height: 2400px;
+	left: 2000px;
+}
+
+.coca{
+	transform: translate(1200px,150px) rotate(5deg);
+	height: 1500px;
+}
+
+
+}
+
+@media screen and (max-width: 540px){
+	.coca{
+		transform: scale(0.6) translate(1000px) rotate(5deg);
+	}
+
+	.circle{
+		left: 1700px
+	}
+		nav .nav_content ul{
+			transform: translate(-110px,-10px);
+		}
+
+		nav .nav_content ul li a{
+			font-size: 42px;
+		}
+.home h1{
+	width: 700px
+}
+
+}
+
+@media screen and (max-width: 414px){
+
+.menu{
+	position: absolute;
+	display: block;
+	right: 1000px;
+	top: 20px
+}
+
+.menu img{
+	width: 90px;
+}
+
+
+
+.close{
+	position: absolute;
+	display: none;
+	right: 1000px;
+	top: 20px
+}
+
+.close img{
+	width: 90px;
+}
+
+	.home{
+		transform: translateY(1000px);
+		padding-bottom: 50px
+	}
+
+nav .nav_content ul li{
+	display: block;
+	margin-bottom: 200px;
+	margin-top: 150px;
+	margin-left: 50px;
+}
+
+nav .nav_content ul li a{
+	color: black;
+}
+
+nav .nav_content ul{
+	background-color: white;
+	height: 500vh;
+	width: 700px;
+	position: absolute;
+	top: 170px;
+	right: 0px;
+ 
+	z-index: 1000;
+
+	transition: all 1s
+}
+
+	.home h1{
+		width: 900px
+	}
+
+.circle{
+	transform: scale(0.5);
+	left: 450px;
+	background-color: rgb(240, 17, 17,0.5);
+}
+
+.coca{
+	transform: scale(0.7) translate(150px,-300px) rotate(5deg);
+	z-index: -1
+}
+
+.social{
+	transform: translate(-50px,-10px);
+}
+
+	}
+
+
+	@media screen and (max-width: 375px) {
+		body{
+			overflow: hidden;
+		}
+
+		.menu{
+			transform: translate(-200px,-80px);
+		}
+
+					.close{
+			transform: translate(-200px,-80px);
+		}
+
+			nav .nav_content ul{
+							width: 900px;
+
+				}
+
+	} 
+
+
+@media screen and (max-width: 320px){
+	.menu{
+		transform: translate(-270px,-80px);
+	}
+
+		.close{
+		transform: translate(-270px,-80px);
+	}
+		.home p{
+			font-size: 55px;
+			width: 1100px;
+			padding: 30px 0 10px 0; 
+		}
+
+}
+
+@media screen and (max-width: 280px){
+	.menu{
+		transform: translate(-380px,-80px);
+	}
+
+		.close{
+		transform: translate(-380px,-80px);
+	}
+
+	nav .nav_content ul{
+		z-index: 1000
+	}
+
+
+	.home p{
+		font-size: 48px;
+		width: 1000px
+	}
+
+	.circle{z-index: -3;
+		display: none;
+	}
+
+	.coca{
+		z-index: -3
+	}
+
+}
+
+
+
+</style>
+
+<body>
+
+	<div class="circle"></div>
+
+<nav>
+
+	<img src="img/logo.png">
+
+	<div class="nav_content">
+
+
+		<li class="menu" onclick="menubar()"><img src="img/menu.png"></li>
+		<li class="close" onclick="out()"><img src="img/close.png"></li>
+
+		
+		<ul>
+			
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Product</a></li>
+			<li><a href="#">Sponsor</a></li>
+			<li><a href="#">Contact</a></li>
+
+		</ul>
+
+	</div>
+
+</nav>
+
+
+
+<div class="home">
+	
+	<h1>Taste the Feeling</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<button>Land More</button>
+
+</div>
+
+<ul class="social">
+	
+
+		
+					<li><a href="#"><img src="img/twitter.png"></a></li>
+			<li><a href="#"><img src="img/facebook.png"></a></li>
+			<li><a href="#"><img src="img/instagram.png"></a></li>
+
+	</ul>
+
+<img src="img/cocacola1.png" class="coca">
+
+
+</body>
+
+<script type="text/javascript">
+	
+	function menubar() {
+
+    var icon = document.querySelector('.menu');
+
+    var img_exit = document.querySelector('.close');
+
+
+        document.querySelector('ul').style.right = '800px';
+
+        icon.style.display = "none";
+
+        img_exit.style.display = "block";
+
+
+}
+
+function out() {
+
+
+    var icon = document.querySelector('.menu');
+
+    var img_exit = document.querySelector('.close');
+
+
+        document.querySelector('ul').style.right = "0px";
+
+        icon.style.display = "block";
+        
+        img_exit.style.display = "none";
+
+
+}
+
+</script>
+
+</html>
