@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	 <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+
+	 <link rel="stylesheet" href="style.css" type="text/css">
+
+	<title>Responsive Cola Landing Page</title>
+
+</head>
+
+
+
+<body>
+
+	<div class="circle"></div>
+
+<nav>
+
+	<img src="img/logo.png">
+
+	<div class="nav_content">
+
+
+		<li class="menu" onclick="menubar()"><img src="img/menu.png"></li>
+		<li class="close" onclick="out()"><img src="img/close.png"></li>
+
+		
+		<ul>
+			
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Product</a></li>
+			<li><a href="#">Sponsor</a></li>
+			<li><a href="#">Contact</a></li>
+
+		</ul>
+
+	</div>
+
+</nav>
+
+
+
+<div class="home">
+	
+	<h1>Taste the Feeling</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<button>Land More</button>
+
+</div>
+
+<ul class="social">
+	
+
+		
+					<li><a href="#"><img src="img/twitter.png"></a></li>
+			<li><a href="#"><img src="img/facebook.png"></a></li>
+			<li><a href="#"><img src="img/instagram.png"></a></li>
+
+	</ul>
+
+<img src="img/cocacola1.png" class="coca">
+
+
+</body>
+
+<script type="text/javascript">
+	
+	function menubar() {
+
+    var icon = document.querySelector('.menu');
+
+    var img_exit = document.querySelector('.close');
+
+
+        document.querySelector('ul').style.right = '800px';
+
+        icon.style.display = "none";
+
+        img_exit.style.display = "block";
+
+
+}
+
+function out() {
+
+
+    var icon = document.querySelector('.menu');
+
+    var img_exit = document.querySelector('.close');
+
+
+        document.querySelector('ul').style.right = "0px";
+
+        icon.style.display = "block";
+        
+        img_exit.style.display = "none";
+
+
+}
+
+</script>
+
+</html>
